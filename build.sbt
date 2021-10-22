@@ -17,8 +17,7 @@ lazy val root = (project in file("."))
       "-Xfatal-warnings"
     ),
     libraryDependencies ++= Seq(
-      zioCore,
-      scalatest
+      zioCore
     ),
     testFrameworks += new TestFramework("zio.test.sbt.ZTestFramework"),
     scalafmtOnCompile := true
